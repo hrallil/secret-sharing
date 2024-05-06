@@ -1,5 +1,18 @@
-# What is this?
-This is a repository used for the final assignment for the course: Cryptography at the IT university of copenhagen. The functionality of this repository contains a fully functioning secret sharing python class, which can create a secret based on a polynomial and return shares which can then recreate the polynomail, and the secret.
+## Getting Started
 
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
+## Folder Structure
 
+The workspace contains two folders by default, where:
+
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
+
+Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+
+> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+
+## Dependency Management
+
+The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).

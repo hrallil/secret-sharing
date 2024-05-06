@@ -5,6 +5,7 @@ public class SecretSharing {
     private BigInteger field;
 
     public SecretSharing(BigInteger field) {
+        // Constructor
         this.field = field;
     }
 
@@ -20,8 +21,9 @@ public class SecretSharing {
 
         return sum;
     }
-
+    
     private BigInteger delta(int k, Share[] shares, int i, BigInteger x){
+        // Lagrange interpolation delta function. Will create the i-th delta function from the x values in the given shares.  
         BigInteger numerator = BigInteger.ONE;
         BigInteger denominator = BigInteger.ONE;
 
@@ -34,10 +36,12 @@ public class SecretSharing {
 
         return numerator.divide(denominator);
     }
+    
 
     public Share[] getShares(BigInteger secret, int N, int k){
         // N - number of shares created
         // k - number of shares reequired to recover the secret
+        // secret - The secret to be shared
         Share[] shares = new Share[N];
 
         // Generate the secret
@@ -58,7 +62,8 @@ public class SecretSharing {
         return shares;
     }
 
-    public BigInteger poly(BigInteger[] coefficients, BigInteger x) {
+    private BigInteger poly(BigInteger[] coefficients, BigInteger x) {
+        // Creates a polynomial from the given coefficients and calculates the value of the polynomial at x
         BigInteger result = BigInteger.ZERO;
 
         for (int i = 0; i < coefficients.length; i++) {
