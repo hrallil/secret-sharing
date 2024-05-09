@@ -1,16 +1,20 @@
 import java.math.BigInteger;
 
 public class Share {
-    private final BigInteger i;
+    // class to contain a point on the polynomial
+    private final BigInteger x;
+    
+    // share = poly(x)
     private final BigInteger share;
-    public Share(BigInteger i, BigInteger share){
-        this.i = i;
+
+    public Share(BigInteger x, BigInteger share){
+        this.x = x;
         this.share = share;
 
     }
 
-    public BigInteger getI() {
-        return i;
+    public BigInteger getX() {
+        return x;
     }
 
     public BigInteger getShare() {
