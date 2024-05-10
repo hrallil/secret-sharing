@@ -6,8 +6,14 @@ public class App {
         // Example to generate shares and recover the secret
         BigInteger field = new BigInteger("2164840427");
         SecretSharing ss = new SecretSharing(field);
+        BigInteger secret;
 
-        BigInteger secret = new BigInteger("1337");
+        // Set secret
+        try {
+            secret = new BigInteger(args[0]);
+        } catch (Exception e) {
+            secret = new BigInteger("1337");
+        }
         Share[] shares = ss.getShares(secret, 6, 3);
         Share[] subset = {shares[0], shares[1], shares[2]};
 
