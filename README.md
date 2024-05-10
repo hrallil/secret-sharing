@@ -1,5 +1,6 @@
 ## What is this? 
 This repository is used as an answer for the assignment for a course at the IT university of copenhagen (ITU). The assignment is on a practical implementation of secret sharing. 
+> Made in peer coding by Mathias M A LarsenRokas (mathl@itu.dk), Kasperavičius (rokk@itu.dk), and Patrick Mørch (pemo@itu.dk).
 
 ## How to run: 
 To run the project `cd` into `src` and run: 
